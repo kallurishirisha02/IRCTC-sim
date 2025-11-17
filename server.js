@@ -94,12 +94,20 @@ app.post('/api/admin/train', (req, res) => {
   res.json({ message: 'train added', train: t });
 });
 
-app.get('/api/train/:id/availability', (req, res) => {
-  const db = readDB();
-  const train = db.trains.find(t => t.id === req.params.id);
-  if (!train) return res.status(404).json({ error: 'train not found' });
-  res.json({ availability: train.availability });
+// --- admin debug route (temporary) ---
+const fs = require('fs');
+const path = require('path');
+
+app.get('/admin/db', (req, res) => {
+  const secret = req.query.secret;
+  if (!process.env.ADMIN_SECRET || secret !== process.env.ADMIN_SECRET) {
+    return res.status(403).send('forbidden');
+  }
+  const file = path.join(__dirname, 'db.json');
+  if (!fs.existsSync(file)) return res.status(404).send('no db.json found');
+  res.sendFile(file);
 });
+
 
 app.post('/api/user/:id/book', (req, res) => {
   const db = readDB();
