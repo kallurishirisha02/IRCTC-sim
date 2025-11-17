@@ -1,38 +1,30 @@
-# IRCTC-sim
+# IRCTC Booking Simulation
 
-Simple IRCTC booking simulation (Assignment/demo).
+Live demo: https://irctc-sim.onrender.com  
+GitHub repo: https://github.com/kallurishirisha02/IRCTC-sim
 
-## Live demo
-[https://irctc-sim.onrender.com/]
+## How to run locally
+1. `git clone https://github.com/kallurishirisha02/IRCTC-sim.git`
+2. `cd IRCTC-sim`
+3. `npm install`
+4. `npm start` (server runs on http://localhost:4000)
+   or for dev:
+   `npx nodemon server.js`
 
-## Features
-- User signup/login
+## Environment variables (for hosted deployment)
+- `ADMIN_SECRET` — admin secret to access debug/admin endpoints (set this in hosting dashboard)
+
+## What this project implements
+- User signup / login (mock auth)
 - Profile management
-- Mock payment (save UPI/credit)
-- Passenger master (save & reuse passengers)
-- Search trains by Source / Destination / Date
-- Book seats (Sleeper / AC / Seater)
+- Passenger master list (save passengers)
+- Search trains (source, destination, date)
+- Check availability, book seats (sleeper, AC, seater)
+- Payment (mock)
 - Booking confirmation & cancellation
-- Admin UI to add train routes
+- Admin: add train routes
 
-## Tech stack
-- Node.js + Express
-- HTML, CSS, JavaScript (frontend)
-- db.json used as simple local store
+## How to view stored backend data
+- Live backend (on Render) stores data in `db.json`. For quick admin view use:
+  `https://irctc-sim.onrender.com/admin`  (requires `ADMIN_SECRET`)
 
-## Run locally
-1. Clone repo:
-   `git clone https://github.com/kallurishirisha02/IRCTC-sim.git`
-2. Install:
-   `npm install`
-3. Start server:
-   `node server.js` or `npx nodemon server.js`
-4. Open:
-   `http://localhost:4000` (or port defined in server.js)
-
-## Notes
-- This is a demo app. Payment is mocked and data is stored in db.json for demonstration only.
-- Remove `node_modules` before sharing repo or use `.gitignore` to avoid large push.
-
-## Contact
-Project author: kalluri shirisha (GitHub: kallurishirisha02)
