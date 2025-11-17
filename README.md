@@ -3,7 +3,7 @@
 Simple IRCTC booking simulation (Assignment/demo).
 
 ## Live demo
-https://irctc-sim.vercel.app/
+[https://irctc-sim.onrender.com/]
 
 ## Features
 - User signup/login
