@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "id": "aspltku",
+      "email": "Kalluri.shirisha02@gmail.com",
+      "password": "12345",
+      "name": "Shirisha01",
+      "profile": {
+        "phone": "7396697169"
+      },
+      "payment": {
+        "card": "7396697169@ybl"
+      },
+      "passengers": [
+        {
+          "id": "4yjmo3a",
+          "name": "Shirisha",
+          "age": "24",
+          "gender": "Female"
+        },
+        {
+          "id": "2mzj5t1",
+          "name": "Ashrith",
+          "age": "24",
+          "gender": "Male"
+        }
+      ],
+      "bookings": [
+        {
+          "id": "tbzbecg",
+          "trainId": "t1",
+          "trainName": "Hyderabad Express",
+          "className": "ac",
+          "passengers": [
+            {
+              "name": "Shirisha",
+              "age": "24",
+              "gender": "F",
+              "berth": "Lower"
+            },
+            {
+              "name": "Ashrith",
+              "age": "24",
+              "gender": "M",
+              "berth": "Lower"
+            }
+          ],
+          "date": "2025-11-17",
+          "status": "CONFIRMED",
+          "amount": 1600
+        }
+      ]
+    }
+  ],
+  "trains": [
+    {
+      "id": "t1",
+      "name": "Hyderabad Express",
+      "source": "Hyderabad",
+      "destination": "Bengaluru",
+      "duration": "8h",
+      "availability": {
+        "sleeper": 40,
+        "ac": 8,
+        "seater": 60
+      }
+    },
+    {
+      "id": "t2",
+      "name": "Secunderabad Superfast",
+      "source": "Hyderabad",
+      "destination": "Chennai",
+      "duration": "15h",
+      "availability": {
+        "sleeper": 50,
+        "ac": 15,
+        "seater": 80
+      }
+    },
+    {
+      "id": "t3",
+      "name": "Coastal Link",
+      "source": "Bengaluru",
+      "destination": "Chennai",
+      "duration": "6h",
+      "availability": {
+        "sleeper": 30,
+        "ac": 8,
+        "seater": 40
+      }
+    },
+    {
+      "id": "6a10b1w",
+      "name": "Shirisha",
+      "source": "Banglore",
+      "destination": "Coimbatore",
+      "duration": "1 day",
+      "availability": {
+        "sleeper": 50,
+        "ac": 20,
+        "seater": 60
+      }
+    }
+  ]
+}

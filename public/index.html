@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>IRCTC-sim</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>IRCTC Booking Simulation</h1>
+
+    <div id="auth">
+      <h2>Signup / Login</h2>
+      <input id="name" placeholder="Name (optional)" />
+      <input id="email" placeholder="Email" />
+      <input id="password" placeholder="Password" type="password" />
+      <button id="signupBtn">Sign Up</button>
+      <button id="loginBtn">Login</button>
+      <div id="authMsg"></div>
+    </div>
+
+    <div id="appArea" style="display:none;">
+      <div>
+        <button id="logoutBtn">Logout</button>
+        <span id="userLabel"></span>
+      </div>
+
+      <section class="card">
+        <h3>Profile</h3>
+        <input id="profileName" placeholder="Full name" />
+        <input id="phone" placeholder="Phone" />
+        <button id="saveProfile">Save Profile</button>
+      </section>
+
+      <section class="card">
+        <h3>Payment (Mock)</h3>
+        <input id="card" placeholder="Card / UPI details" />
+        <button id="savePayment">Save Payment</button>
+        <div id="paymentMsg"></div>
+      </section>
+
+      <section class="card">
+        <h3>Passenger Master</h3>
+        <input id="pName" placeholder="Passenger name" />
+        <input id="pAge" placeholder="Age" type="number" />
+        <select id="pGender"><option>Male</option><option>Female</option><option>Other</option></select>
+        <button id="addPassenger">Add Passenger</button>
+        <ul id="passengerList"></ul>
+      </section>
+
+      <section class="card">
+        <h3>Search Trains</h3>
+        <input id="sSource" placeholder="Source" />
+        <input id="sDest" placeholder="Destination" />
+        <input id="sDate" type="date" />
+        <button id="searchBtn">Search</button>
+        <ul id="trainResults"></ul>
+      </section>
+
+      <section class="card">
+        <h3>Your Bookings</h3>
+        <ul id="bookingsList"></ul>
+      </section>
+
+      <section class="card">
+        <h3>Admin: Add Train</h3>
+        <input id="aName" placeholder="Name" />
+        <input id="aSrc" placeholder="Source" />
+        <input id="aDest" placeholder="Destination" />
+        <input id="aDur" placeholder="Duration" />
+        <button id="addTrainBtn">Add Train</button>
+        <div id="adminMsg"></div>
+      </section>
+    </div>
+
+    <div id="footer">Demo by IRCTC-sim</div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

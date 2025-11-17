@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background:#f7f7f7; }
+.container { max-width:900px; margin:20px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+.card { border:1px solid #eee; padding:12px; margin:12px 0; border-radius:6px; }
+input, select { display:block; margin:6px 0; padding:8px; width:100%; max-width:380px; }
+button { margin-top:8px; padding:8px 12px; cursor:pointer; }
+ul { list-style:none; padding-left:0; }
+li { padding:6px 0; border-bottom:1px dashed #ddd; }
+#footer { margin-top:18px; color:#666; font-size:14px; }
